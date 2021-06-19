@@ -1,0 +1,56 @@
+<div id='down'>
+    <img src="docker.png" alt="right" width="200" height="200">
+</div>
+
+<div id='right' onclick="move_right();">
+    <img src="docker.png" alt="right" width="200" height="200">
+</div>
+
+ 
+
+<style>
+    div {
+        position: absolute;
+        height: 200px;
+        width: 300;
+        top: 0px;
+    }
+</style>
+
+
+<script>
+    
+    i = 0;
+    function move_right() {
+        document.getElementById("down").style.visibility="hidden";
+        var right = document.getElementById("right");
+        right.style.left = i;
+        i = i + 1;
+        if (i != screen.width-300) {
+            setTimeout(move_right, 10);
+        }
+        else {
+            i=0;
+            move_down();
+        }
+    }
+     
+    function move_down() {
+        
+        document.getElementById("down").style.visibility="visible";
+        var right = document.getElementById("right");
+        right.innerHTML=null;
+        var down = document.getElementById("down");
+        
+        down.style.left=screen.width-200;
+        down.style.top = i;
+        i = i + 1;
+        if (i != screen.height-200) {
+            setTimeout(move_down, 10);
+        }
+        else {
+            alert("ho gya");
+        }
+
+    }
+</script>

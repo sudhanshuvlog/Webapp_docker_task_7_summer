@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="style.css">
+<divv id='heading'>
+    <h1>Welcome to the Docker Container World</h1>
+</divv>
+
+<div id="launch_container">
+    <form action="/cgi-bin/docker.py">
+
+        <h4 style="text-align:left; color:green;font-family : cursive;">Launch docker container</h4>
+        <input type="text" placeholder="Enter AMI name" name="image_name" /><br><br>
+        <input type="text" placeholder="Give a name to your conatiner" name="os_name" /><br><br>
+        <button style="font-family:cursive" name="submit" value="start_new_os">Start new container</button>
+    </form>
+
+    <br>
+</div>
+<div id="display_container">
+    <form action="/cgi-bin/docker.py">
+        <h4 style="text-align:left; color:green;font-family : cursive;">See avliable conatiners</h4>
+        <button style="font-family:cursive" name="submit" value="display_all_os">Display</button>
+    </form>
+</div>
+
+<div id="delete_container">
+    <form action="/cgi-bin/docker.py">
+
+        <h4 style="text-align:left; color:green;font-family : cursive;">Launch docker container</h4>
+        <input type="text" placeholder="Enter AMI name" name="image_name" /><br><br>
+        <input type="text" placeholder="Give a name to your conatiner" name="os_name" /><br><br>
+        <button style="font-family:cursive" name="submit" value="start_new_os">Start new container</button>
+    </form>
+
+    <br>
+</div>
+
+<div id="login_container">
+    <h4 style="font-family:cursive;color:green">Docker Terminal</h4>
+    <form action="/cgi-bin/docker.py">
+        <input type="text" placeholder="container name" name="os_name" /><br><br>
+        <input type="text" placeholder="Enter your Command..." name="cmd"
+            style="width:100%;font-family:cursive; height:10%;border-radius:20px; text-align:center" /><br><br>
+        <button style="font-family:cursive " name="submit" value="launch_terminal">Start</button>
+
+
+        <br>
+</div>

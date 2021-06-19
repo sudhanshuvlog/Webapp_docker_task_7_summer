@@ -1,0 +1,34 @@
+div#launch_container{
+    height: 200;
+    width:250;
+     position: absolute;
+     top:100;
+     border: 2px solid yellowgreen;
+}
+
+div#display_container{
+    position: absolute;
+    right:100;
+    height: 200;
+    width:250;
+      
+     border: 2px solid yellowgreen;
+}
+
+div#delete_container{
+    position: absolute;
+    bottom:50;
+    right:100;
+    height: 200;
+    width:250;
+      
+     border: 2px solid yellowgreen;
+}
+div#login_container{
+    position: absolute;
+    bottom:50;
+    height: 200;
+    width:250;
+      
+     border: 2px solid yellowgreen;
+}
