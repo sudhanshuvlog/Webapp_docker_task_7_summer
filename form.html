@@ -4,66 +4,107 @@
 <body id="home">
 
     <div id='heading' onclick="containers_remove();">
-        <h1>Welcome to the Docker Container World</h1>
+        <h1 style="text-align: center; color: aliceblue; text-shadow: 2px 2px 10px red; font-size: 3vw;">Welcome to the Docker Container World</h1>
     </div>
 
-    <div id='down'>
+    <!--<div id='down'>
         <img src="docker.png" alt="right" width="150" height="150">
     </div>
 
     <div id='right' onclick="containers_add();">
         <img src="docker.png" alt="right" width="150" height="150">
-    </div>
+    </div>-->
 
      
     <div class="flip-card">
         <div class="flip-card-inner">
             <div class="flip-card-front">
-                <h1>Launch Container</h1>
+                <div class="post-img" style="background-image: url('docker.png');"></div>
+                    <div class="post-info">
+                        <h1 style="font-size: 2vw; text-shadow: 2px 2px 10px rgb(11, 2, 61);">Launch container</h1>
+                    </div>
 
             </div>
             <div class="flip-card-back">
-<h4 style="text-align:left; color:green;font-family : cursive;">Launch docker container</h4>
+                <h4 style="text-align:center; color:green;font-family : cursive;">Launch docker container</h4>
                 <input type="text" placeholder="Enter image name" name="image_name" id="image_name_launch" /><br><br>
                 <input type="text" placeholder="Give a name to your conatiner" name="os_name"
                     id="os_name_launch" /><br><br>
                 <button style="font-family:cursive" name="submit" value="start_new_os"
                     onclick="launch_container();">Start new container</button>
                     <br>
-                </div>
-                 </div>
+            </div>
+        </div>
     </div>
  
      
-<div id="display_container">
-
-        <h4 style="text-align:left; color:green;font-family : cursive;">See avliable conatiners</h4>
-        <button style="font-family:cursive" name="submit" value="display_all_os"
-            onclick="containers();">Display</button>
-
+    <div id="display_container">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <div class="post-img" style="background-image: url('docker.png');"></div>
+                <div class="post-info">
+                    <h1 style="font-size: 2vw;text-shadow: 2px 2px 10px rgb(1, 12, 9);">Avaliable Containers</h1>
+                </div>
+    
+            </div> 
+            <div class="flip-card-back"> 
+                
+                <h4 style="text-align:center; color:green;font-family : cursive;">See avliable conatiners</h4>
+                <button style="font-family:cursive" name="submit" value="display_all_os"
+                onclick="containers();">Display</button>
+                
+            </div>
+        </div>
+    </div>
     </div>
 
+
     <div id="delete_container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="post-img" style="background-image: url('docker.png');"></div>
+                    <div class="post-info">
+                        <h1 style="font-size: 2vw;text-shadow: 2px 2px 10px rgb(1, 12, 9);">New container</h1>
+                    </div>
+        
+                </div> 
+                <div class="flip-card-back">
 
-
-        <h4 style="text-align:left; color:green;font-family : cursive;">Launch docker container</h4>
-        <input type="text" placeholder="Enter AMI name" name="image_name" /><br><br>
-        <input type="text" placeholder="Give a name to your conatiner" name="os_name" /><br><br>
-        <button style="font-family:cursive" name="submit" value="start_new_os">Start new container</button>
-
-
-        <br>
+                    <h4 style="text-align:center; color:green;font-family : cursive;">Launch docker container</h4>
+                    <input type="text" placeholder="Enter AMI name" name="image_name" /><br><br>
+                    <input type="text" placeholder="Give a name to your conatiner" name="os_name" /><br><br>
+                    <button style="font-family:cursive" name="submit" value="start_new_os">Start new container</button>
+                    <br>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="login_container">
-        <h4 style="font-family:cursive;color:green">Docker Terminal</h4>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="post-img" style="background-image: url('docker.png');"></div>
+                    <div class="post-info">
+                        <h1 style="font-size: 2vw;text-shadow: 2px 2px 10px rgb(1, 12, 9);">Docker terminal</h1>
+                    </div>
+        
+                </div> 
+                <div class="flip-card-back">
 
-        <input type="text" placeholder="container name" name="os_name" /><br><br>
-        <input type="text" placeholder="Enter your Command..." name="cmd"
-            style="width:100%;font-family:cursive; height:10%;border-radius:20px; text-align:center" /><br><br>
-        <button style="font-family:cursive " name="submit" value="launch_terminal">Start</button>
+                    <h4 style="font-family:cursive;color:green">Docker Terminal</h4>
+
+                    <input type="text" placeholder="container name" name="os_name" /><br><br>
+                    <input type="text" placeholder="Enter your Command..." name="cmd"
+                        style="width:100%;font-family:cursive; height:10%;border-radius:20px; text-align:center" /><br><br>
+                    <button style="font-family:cursive " name="submit" value="launch_terminal">Start</button>
 
 
-        <br>
+                    <br>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
