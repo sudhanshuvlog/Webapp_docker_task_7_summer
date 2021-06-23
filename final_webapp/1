@@ -1,0 +1,116 @@
+<link rel="stylesheet" href="style1.css">
+<script src='script.js'></script>
+
+<body id="home">
+
+
+     <!--<video autoplay muted loop id="myVideo">
+        <source src="videos/y2mate.com - Beautiful sea background_1080p.mp4" type="video/mp4">
+    </video>
+-->
+    <div id='heading'>
+        <h1 style="text-align: center; color: white; text-shadow: 2px 2px 10px white; font-size: 3vw;">Welcome to the
+            Docker Container World</h1>
+    </div>
+
+    <!--<div id='down'>
+        <img src="docker.png" alt="right" width="150" height="150">
+    </div>
+    <div id='right' onclick="containers_add();">
+        <img src="docker.png" alt="right" width="150" height="150">
+    </div>-->
+
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+		<pre>
+                <div id="back_launch_container"style="word-break: break-all;
+  white-space: pre-wrap;overflow:scroll;width:400px;height:180px;">Launch Container</div>
+		<pre>
+                <!--    <div class="post-info">
+                    <h1 style="font-size: 2vw; text-shadow: 2px 2px 10px rgb(11, 2, 61);">Launch container</h1>
+                    </div>
+                -->
+            </div>
+            <div class="flip-card-back">
+                <h4 style="text-align:center; color:green;font-family : cursive;">Launch docker container</h4>
+                <input type="text" placeholder="Enter image name" name="image_name" id="image_name_launch" /><br><br>
+                <input type="text" placeholder="Give a name to your conatiner" name="os_name"
+                    id="os_name_launch" /><br><br>
+                <button style="font-family:cursive" name="submit" value="start_new_os"
+                    onclick="launch_container(); containers_add();">Start new container</button>
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+  <div id="display_container">
+        <div class="flip-card1">
+            <div class="flip-card-inner1">
+                <div class="flip-card-front1">
+			<pre>
+                    <div id="back_display_container"style="color:white;word-break: break-all;
+  white-space: pre-wrap;overflow:scroll;width:400px;height:180px;">Display containers</div>
+
+<pre>
+                </div>
+
+
+
+                <div class="flip-card-back1">
+
+                    <h4 style="text-align:center; color:green;font-family : cursive;">See avliable conatiners</h4>
+                    <button style="font-family:cursive" name="submit" value="display_all_os"
+                        onclick="display_container();">Display</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="delete_container">
+        <div class="flip-card2">
+            <div class="flip-card-inner2">
+                <div class="flip-card-front2">
+		<pre>
+                    <div id="back_delete_container">Delete Container</div>
+	      <pre>
+	      </div>
+                <div class="flip-card-back2">
+
+                    <h4 style="text-align:center; color:green;font-family : cursive;">Delete docker container</h4>
+                    <input type="text" placeholder="Enter os name" name="os_name" id="os_name_delete" /><br><br>
+                    <button style="font-family:cursive" name="submit" value="delete_container"onclick ="container_remove();">Delete</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="login_container">
+        <div class="flip-card3">
+            <div class="flip-card-inner3">
+                <div class="flip-card-front3">
+		<pre>
+                    <div id="back_container_terminal"style="word-break: break-all;
+  white-space: pre-wrap;overflow:scroll;width:400px;height:180px;">container Terminal</div>
+		   <pre>
+                </div>
+                <div class="flip-card-back3">
+
+                    <h4 style="font-family:cursive;color:green">Docker Terminal</h4>
+
+                    <input type="text" placeholder="container name" name="os_name"id="os_name_terminal"/><br><br>
+                    <input type="text" placeholder="Enter your Command..." name="cmd"
+                        style="width:100%;font-family:cursive; height:10%;border-radius:20px; text-align:center" id="command_terminal" /><br><br>
+		    <button style="font-family:cursive " name="submit" value="launch_terminal"onclick="container_terminal();">Start</button>
+
+
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
