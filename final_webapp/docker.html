@@ -1,0 +1,43 @@
+<h1 style="font-family:cursive;color:blue">Docker Container</h1>
+
+<style>
+body {background-color:aqua;}
+
+</style>
+
+<body>
+
+
+<form action="/cgi-bin/docker.py">
+<h4 style= "text-align:left; color:green;font-family : cursive;">Launch docker container</h4>
+<input type="text" placeholder="Enter AMI name" name="image_name"/><br><br>
+<input type="text" placeholder="Give a name to your conatiner" name="os_name"/><br><br>
+<button style="font-family:cursive" name="submit" value="start_new_os" >Start new container</button>
+</form>
+
+<br>
+
+<form action="/cgi-bin/docker.py">
+<h4 style= "text-align:left; color:green;font-family : cursive;">See avliable conatiners</h4>
+<button style="font-family:cursive" name="submit" value="display_all_os" >Display</button>
+</form>
+<form action="/cgi-bin/docker.py">
+<h4 style= "text-align:left; color:green;font-family : cursive;">Start/Stop a container</h4>
+<select name="start_stop">
+<option value="start">Start a container </option>
+<option value="stop"> Stop a container </option>
+</select>
+<button style="font-family:cursive" name="submit" value="display_all_os" >Display</button>
+<br><br>
+<input type="text" placeholder="container name" name="os_name"/><br><br>
+<button style="font-family:cursive" name="submit" value="start_stop" >Start/Stop</button>
+</form>
+
+
+<h4 style="text-align:left; color:green; font-family:cursive;">launch Container terminal</h4>
+<form action="docker_terminal.html">
+<button style="font-family:cursive" name="submit" value="launch_terminal" >Launch</button>
+</form>
+
+</form>
+
