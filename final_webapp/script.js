@@ -6,7 +6,7 @@ function launch_container(){
     var image=image_name.value;
     var os=os_name_launch.value;
     
-    url="http://65.2.9.181/cgi-bin/docker.py?image_name="+image +"&os_name="+os+"&submit=start_new_os";
+    url="http://13.127.219.77/cgi-bin/docker.py?image_name="+image +"&os_name="+os+"&submit=start_new_os";
  
     var xhr=new XMLHttpRequest();
     xhr.open("GET",url,true);
@@ -24,7 +24,7 @@ function display_container() {
 
     back = document.getElementById("back_display_container");
 
-    url = "http://65.2.9.181/cgi-bin/docker.py?submit=display_all_os";
+    url = "http://13.127.219.77/cgi-bin/docker.py?submit=display_all_os";
     var xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
     xhr.send();
@@ -43,7 +43,7 @@ function container_remove() {
 os_name=document.getElementById("os_name_delete");
 	os_name=os_name.value;
 
-    url = "http://65.2.9.181/cgi-bin/docker.py?os_name="+os_name+"&submit=delete_container";
+    url = "http://13.127.219.77/cgi-bin/docker.py?os_name="+os_name+"&submit=delete_container";
     var xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
     xhr.send();
@@ -61,7 +61,7 @@ function container_terminal(){
     var command=command_name_terminal.value;
     var os_name=os_name_terminal.value;
 
-    url="http://65.2.9.181/cgi-bin/docker.py?cmd="+command +"&os_name="+os_name+"&submit=launch_terminal";
+    url="http://13.127.219.77/cgi-bin/docker.py?cmd="+command +"&os_name="+os_name+"&submit=launch_terminal";
 
     var xhr=new XMLHttpRequest();
     xhr.open("GET",url,true);
